@@ -1,7 +1,8 @@
 name: Run HackTricks
 
-on: [push] # 您可以根据需要更改触发器，例如 [workflow_dispatch] 手动触发
-
+on:
+  push: # 仍然在推送时运行
+  workflow_dispatch: # 允许手动触发
 jobs:
   run_hacktricks:
     runs-on: ubuntu-latest
